@@ -1,6 +1,7 @@
 package com.fruit.backend;
 
 import java.util.Date;
+import java.util.Random;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -99,11 +100,11 @@ public class App {
 		
 		FindingDAOImpl findingDAOImpl = ctx.getBean(FindingDAOImpl.class);
 		
-//		Finding finding = new Finding(1, "good", "finding", true, 12, new Date(), new Date(), "Shian", "Shian");
-//		
-//		findingDAOImpl.insert(finding);
+		Finding finding = new Finding( "good", "finding", true, new Random().nextInt(10), new Date(), new Date(), "Shian", "Shian");
 		
-		System.out.println(findingDAOImpl.findById(21));
+		findingDAOImpl.insert(finding);
+		
+		//System.out.println(findingDAOImpl.findById(21));
 
 		//test change
 		//second test change

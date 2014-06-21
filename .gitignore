@@ -35,3 +35,8 @@ Icon
 .Spotlight-V100
 .Trashes
 /build
+
+*.class
+*.class
+bin/com/fruit/backend/Finding.class
+bin/com/fruit/backend/App.class

@@ -34,11 +34,8 @@ public class Finding {
 		this.approved = approved;
 	}
 	
-	public Finding(int id, String description, String fType, boolean approved,
-			int manufacturerId, Date createDate, Date lastUpdateDate,
-			String createUser, String lastUpdateUser) {
+	public Finding(String description, String fType, boolean approved, int manufacturerId, Date createDate, Date lastUpdateDate, String createUser, String lastUpdateUser) {
 		super();
-		this.id = id;
 		this.description = description;
 		this.fType = fType;
 		this.approved = approved;
