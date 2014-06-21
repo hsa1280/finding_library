@@ -1,0 +1,16 @@
+<project name="f [db-base]" default="build-all" basedir="..">
+
+	<property name="script.dir" value="${basedir}/db/base"/>
+
+	<target name="build-all" description="Run all tasks in order">
+
+		<antcall target="build-sequences" />
+		<antcall target="build-tables" />
+		<antcall target="build-triggers" />
+		<antcall target="compile-schema" />
+
+	</target>
+
+	<import file="dbbuild.xml"/>
+
+</project>

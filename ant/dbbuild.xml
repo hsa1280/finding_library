@@ -1,0 +1,148 @@
+<project name="findings_library [db-build]" basedir="..">
+
+	<property name="target.dir" value="${basedir}/target/${target.env}/resources"/>
+	<property file="${target.dir}/application.properties"/>
+
+	<!-- Ant Classpath -->
+	<path id="ant.classpath">
+		<fileset dir="${basedir}/ant">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<input
+		message="Enter database user name:"
+		addproperty="db.user"
+		defaultvalue="Findings_Library"
+	/>
+
+	<input
+		message="Enter database password:"
+		addproperty="db.password"
+		defaultvalue="password"
+	/>
+
+	<input
+		message="Enter database driver (press enter for default: oracle.jdbc.driver.OracleDriver):"
+		addproperty="db.driver"
+		defaultvalue="oracle.jdbc.driver.OracleDriver"
+	/>
+
+	<input
+		message="Enter database url (Press enter for default: jdbc:oracle:thin:@localhost:1521:XE):"
+		addproperty="db.url"
+		defaultvalue="jdbc:oracle:thin:@localhost:1521:XE"
+	/>
+
+	<echo>
+		User:   ${db.user}
+		Pass:   ${db.password}
+		Driver: ${db.driver}
+		URL:	${db.url}
+		Target: ${target.env}
+	</echo>
+
+	<target name="build-sequences">
+
+		<antcall target="execute-sql">
+			<param name="sql.folder" value="sequences" />
+		</antcall>
+
+	</target>
+
+	<target name="build-tables">
+
+		<antcall target="execute-sql">
+			<param name="sql.folder" value="ddl" />
+		</antcall>
+
+	</target>
+
+	<target name="build-triggers">
+
+		<antcall target="execute-sql">
+			<param name="sql.folder" value="triggers" />
+			<param name="sql.delimiter" value="/" />
+			<param name="sql.delimiter.type" value="row" />
+			<param name="sql.onerror" value="continue" />
+			<param name="sql.keepformat" value="true" />
+		</antcall>
+
+	</target>
+
+	<target name="compile-schema">
+
+		<antcall target="execute-embedded-sql">
+			<param name="sql.embedded">
+				begin
+					dbms_utility.compile_schema(upper('${db.user}'),true);
+				end;
+			</param>
+		</antcall>
+
+	</target>
+
+	<target name="execute-sql">
+
+		<!-- Default Values. Pass property as parameter to override. -->
+
+		<property name="sql.delimiter" value=";" />
+		<property name="sql.delimiter.type" value="normal" />
+		<property name="sql.onerror" value="abort" />
+		<property name="sql.keepformat" value="false" />
+		<property name="sql.fileset.wildcard" value="*" />
+
+		<sequential>
+
+			<sql driver="${db.driver}"
+				 password="${db.password}"
+				 url="${db.url}"
+				 userid="${db.user}"
+				 classpathref="ant.classpath"
+				 delimiter="${sql.delimiter}"
+				 delimitertype="${sql.delimiter.type}"
+				 keepformat="${sql.keepformat}"
+				 onerror="${sql.onerror}"
+			>
+
+				<fileset dir="${script.dir}/${sql.folder}">
+					<include name="${sql.fileset.wildcard}.sql"/>
+				</fileset>
+
+				<fileset dir="${script.dir}/${sql.folder}">
+					<include name="${sql.fileset.wildcard}.plb"/>
+				</fileset>
+
+			</sql>
+
+		</sequential>
+
+	</target>
+
+	<target name="execute-embedded-sql">
+
+		<property name="sql.delimiter" value="/" />
+		<property name="sql.delimiter.type" value="row" />
+		<property name="sql.onerror" value="continue" />
+
+		<sequential>
+
+			<sql driver="${db.driver}"
+				 password="${db.password}"
+				 url="${db.url}"
+				 userid="${db.user}"
+				 classpathref="ant.classpath"
+				 delimiter="${sql.delimiter}"
+				 delimitertype="${sql.delimiter.type}"
+				 onerror="${sql.onerror}"
+			>
+				<![CDATA[
+					${sql.embedded}
+				]]>
+			</sql>
+
+		</sequential>
+
+	</target>
+
+</project>

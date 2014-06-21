@@ -1,0 +1,190 @@
+/*
+ * Plugins
+ *
+ * http://www.gradle.org/docs/current/userguide/plugins.html
+ */
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'project-report'
+
+/*
+ * Load Configuration
+ *
+ * http://codebrickie.com/blog/2011/04/16/building-for-different-environments-with-gradle/
+ * http://www.gradle.org/docs/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html
+ */
+
+loadConfiguration()
+
+def loadConfiguration() {
+
+	// Specify environment with argument -P (eg., gradle build -Ptarget=test )
+	project.ext.target = ( hasProperty( 'target' ) ? target : 'local' )
+
+	println 'target = ' + project.target
+
+}
+
+/*
+ * Build Script and External Dependencies
+ *
+ * http://www.gradle.org/docs/current/userguide/organizing_build_logic.html#sec:external_dependencies
+ */
+
+buildscript {
+
+	// This task used to add dependencies used for building the project.
+	// This will not be included in the final distribution.
+
+    /*
+	 * Dependencies
+	 *
+	 * http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+	 * http://www.gradle.org/docs/current/userguide/dependency_management.html
+	 */
+
+	repositories {
+		maven {
+			url "http://webfruit13.fruit.com:9090/archiva/repository/internal/"
+			//url "http://repo.maven.apache.org/maven2"
+		}
+	}
+	
+}
+
+/*
+ * Wrapper Task
+ *
+ * http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.wrapper.Wrapper.html
+ */
+
+task wrapper( type: Wrapper ) {
+	gradleVersion = '1.8'
+}
+
+/*
+ * Project Properties
+ *
+ * http://www.gradle.org/docs/current/dsl/org.gradle.api.Project.html#N13808
+ */
+
+group = 'com.fruit'
+version = '1.0.0'
+
+/*
+ * Java Plugin Configuration
+ *
+ * http://www.gradle.org/docs/current/userguide/java_plugin.html
+ */
+
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
+
+sourceSets {
+
+	main {
+		java {
+			srcDir 'src'
+		}
+		resources {
+			srcDir 'src'
+			srcDir 'target/' + project.target + '/resources'
+			exclude '**/*.java'
+		}
+	}
+
+}
+
+test {
+	useTestNG {
+		suites 'test/testng-suite.xml'
+	}
+}
+
+/*
+ * Dependencies
+ *
+ * http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+ * http://www.gradle.org/docs/current/userguide/dependency_management.html
+ */
+
+repositories {
+	maven {
+		url "http://webfruit13.fruit.com:9090/archiva/repository/internal/"
+		//url "http://repo.maven.apache.org/maven2"
+	}
+}
+
+dependencies {
+
+	def springVersion = '3.2.4.RELEASE'
+	def springDataVersion = '1.4.1.RELEASE'
+	def springDataSolrVersion = '1.0.0.RELEASE'
+	def hibernateVersion = '4.2.5.Final'
+
+	/*
+	 * Custom JARs in flatDir lib folder
+	 * See documentation for naming conventions allowed:
+	 * http://www.gradle.org/docs/current/javadoc/org/gradle/api/artifacts/repositories/FlatDirectoryArtifactRepository.html
+	 */
+
+	compile( fileTree( dir: 'lib' ) )
+
+	/*
+	 * Compile Scope
+	 */
+
+	compile( 'org.springframework' + ':spring-aop:' + springVersion )
+	compile( 'org.springframework' + ':spring-aspects:' + springVersion )
+	compile( 'org.springframework' + ':spring-beans:' + springVersion )
+	compile( 'org.springframework' + ':spring-context-support:' + springVersion )
+	compile( 'org.springframework' + ':spring-context:' + springVersion )
+	compile( 'org.springframework' + ':spring-core:' + springVersion )
+	compile( 'org.springframework' + ':spring-expression:' + springVersion )
+	compile( 'org.springframework' + ':spring-jdbc:' + springVersion )
+	compile( 'org.springframework' + ':spring-jms:' + springVersion )
+	compile( 'org.springframework' + ':spring-orm:' + springVersion )
+	compile( 'org.springframework' + ':spring-oxm:' + springVersion )
+	compile( 'org.springframework' + ':spring-tx:' + springVersion )
+	compile( 'org.springframework' + ':spring-web:' + springVersion )
+	compile( 'org.springframework' + ':spring-webmvc:' + springVersion )
+
+	compile( 'org.springframework.data' + ':spring-data-jpa:' + springDataVersion )
+
+	compile( 'org.hibernate' + ':hibernate-entitymanager:' + hibernateVersion )
+
+	compile( 'commons-beanutils' + ':commons-beanutils:' + '1.8.3' )
+
+	compile( 'log4j' + ':log4j:' + '1.2.17' )
+	compile( 'org.slf4j' + ':slf4j-log4j12:' + '1.7.1' )
+
+	compile( 'jstl' + ':jstl:' + '1.2' )
+	compile( 'taglibs' + ':standard:' + '1.1.2' )
+
+	compile( 'org.hibernate' + ':hibernate-validator:' + '5.0.1.Final' )
+
+	/*
+	 * Test Scope
+	 * 		Included on classpath for testing
+	 * 		Excluded in build jar/war for deployment
+	 */
+
+	testCompile( 'org.springframework' + ':spring-test:' + springVersion )
+
+	testCompile( 'org.testng' + ':testng:' + '6.8.5' )
+
+	/*
+	 * Provided Scope (requires 'war' plugin)
+	 * 		Included on classpath for development
+	 * 		Excluded in build jar/war for deployment
+	 */
+
+	providedCompile( 'org.apache.tomcat' + ':tomcat-servlet-api:' + '7.0.42' )
+
+	providedCompile( 'oracle' + ':ojdbc6:' + '11.2.0.2.0' )
+	providedCompile( 'oracle' + ':ucp:' + '2009.07.31' )
+	providedCompile( 'oracle' + ':ons:' + '2006.01.30' )
+
+}
+
