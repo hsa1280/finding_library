@@ -46,8 +46,8 @@ buildscript {
 
 	repositories {
 		maven {
-			url "http://webfruit13.fruit.com:9090/archiva/repository/internal/"
-			//url "http://repo.maven.apache.org/maven2"
+			//url "http://webfruit13.fruit.com:9090/archiva/repository/internal/"
+			url "http://repo.maven.apache.org/maven2"
 		}
 	}
 	
@@ -111,8 +111,8 @@ test {
 
 repositories {
 	maven {
-		url "http://webfruit13.fruit.com:9090/archiva/repository/internal/"
-		//url "http://repo.maven.apache.org/maven2"
+		//url "http://webfruit13.fruit.com:9090/archiva/repository/internal/"
+		url "http://repo.maven.apache.org/maven2"
 	}
 }
 

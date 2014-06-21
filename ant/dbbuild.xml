@@ -1,7 +1,7 @@
 <project name="findings_library [db-build]" basedir="..">
 
 	<property name="target.dir" value="${basedir}/target/${target.env}/resources"/>
-	<property file="${target.dir}/application.properties"/>
+	<property file="target/local/resources/application.properties"/>
 
 	<!-- Ant Classpath -->
 	<path id="ant.classpath">
