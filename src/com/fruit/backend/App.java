@@ -104,9 +104,9 @@ public class App {
 		
 		Finding finding = new Finding( "good", "finding", true, new Random().nextInt(10), new Date(), new Date(), "Shian", "Shian");
 		
-		findingDAOImpl.insert(finding);
+//		findingDAOImpl.insert(finding);
 		
-		//System.out.println(findingDAOImpl.findById(21));
+		System.out.println(findingDAOImpl.findById(9));
 
 		//test change
 		//second test change
