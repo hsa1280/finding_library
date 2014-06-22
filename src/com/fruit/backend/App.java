@@ -1,8 +1,5 @@
 package com.fruit.backend;
 
-import java.util.Date;
-import java.util.Random;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -98,20 +95,13 @@ public class App {
 		@SuppressWarnings("resource")
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(FindingImplConfig.class);
 		
-		//change
-		
 		FindingDAOImpl findingDAOImpl = ctx.getBean(FindingDAOImpl.class);
 		
 //		Finding finding = new Finding( "good", "finding", true, new Random().nextInt(10), new Date(), new Date(), "Shian", "Shian");
 		
 //		findingDAOImpl.insert(finding);
 		
-		System.out.println(findingDAOImpl.findById(10));
+		System.out.println(findingDAOImpl.findById(9));
 
-		//test change
-		//second test change
-		
-		
-		
 	}
 }
