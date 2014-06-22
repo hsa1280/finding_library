@@ -26,9 +26,8 @@ public class Finding {
 		super();
 	}
 	
-	public Finding( int id, String desciption, String fType, boolean approved ) {
-		
-		//this.id = id;
+	public Finding( String desciption, String fType, boolean approved ) {
+		//no need to add id
 		this.description = desciption;
 		this.fType = fType;
 		this.approved = approved;

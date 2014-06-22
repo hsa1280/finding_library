@@ -102,11 +102,11 @@ public class App {
 		
 		FindingDAOImpl findingDAOImpl = ctx.getBean(FindingDAOImpl.class);
 		
-		Finding finding = new Finding( "good", "finding", true, new Random().nextInt(10), new Date(), new Date(), "Shian", "Shian");
+//		Finding finding = new Finding( "good", "finding", true, new Random().nextInt(10), new Date(), new Date(), "Shian", "Shian");
 		
 //		findingDAOImpl.insert(finding);
 		
-		System.out.println(findingDAOImpl.findById(9));
+		System.out.println(findingDAOImpl.findById(10));
 
 		//test change
 		//second test change
