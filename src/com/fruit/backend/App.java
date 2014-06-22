@@ -98,6 +98,8 @@ public class App {
 		@SuppressWarnings("resource")
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(FindingImplConfig.class);
 		
+		//change
+		
 		FindingDAOImpl findingDAOImpl = ctx.getBean(FindingDAOImpl.class);
 		
 		Finding finding = new Finding( "good", "finding", true, new Random().nextInt(10), new Date(), new Date(), "Shian", "Shian");
