@@ -1,10 +1,13 @@
 package com.fruit.backend;
 
+
+import java.util.Date;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.fruit.DAO.impl.FindingDAOImpl;
-import com.fruit.config.FindingImplConfig;
+import com.fruit.DAO.impl.EmployeeDAOImpl;
+import com.fruit.config.EmployeeImplConfig;
 
 public class App {
 	
@@ -82,26 +85,27 @@ public class App {
 		
 //		context.close();
 		
-//		ApplicationContext ctx = new AnnotationConfigApplicationContext( EmployeeImplConfig.class);
-//		
-//		EmployeeDAOImpl employeeImpl = (EmployeeDAOImpl)ctx.getBean(EmployeeDAOImpl.class );
+		@SuppressWarnings("resource")
+		ApplicationContext ctx = new AnnotationConfigApplicationContext( EmployeeImplConfig.class);
 		
-//		Employee employee3 = new Employee(456, "Bob", "Gailey", "Bob@ufl.edu" );
-//		
-//		employeeImpl.insert(employee3);
+		EmployeeDAOImpl employeeImpl = (EmployeeDAOImpl)ctx.getBean(EmployeeDAOImpl.class );
+		
+		Employee employee3 = new Employee("Shian", "Huang", "Shian.huang@fotlinc.com", new Date(), new Date(), "Shian Huang", "Shian Huang");
+		
+		employeeImpl.insert(employee3);
 		
 //		System.out.println(employeeImpl.findFirstNameById(7));
 		
-		@SuppressWarnings("resource")
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(FindingImplConfig.class);
+//		@SuppressWarnings("resource")
+//		ApplicationContext ctx = new AnnotationConfigApplicationContext(FindingImplConfig.class);
 		
-		FindingDAOImpl findingDAOImpl = ctx.getBean(FindingDAOImpl.class);
+//		FindingDAOImpl findingDAOImpl = ctx.getBean(FindingDAOImpl.class);
 		
 //		Finding finding = new Finding( "good", "finding", true, new Random().nextInt(10), new Date(), new Date(), "Shian", "Shian");
 		
 //		findingDAOImpl.insert(finding);
 		
-		System.out.println(findingDAOImpl.findById(9));
+//		System.out.println(findingDAOImpl.findById(9));
 
 	}
 }

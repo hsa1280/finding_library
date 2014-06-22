@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="src.com.fruit.findings_library.test.backend.service.FindingLibraryTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="beforeMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClassParent"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testGetEmployeeById" invocation-numbers="0"/>
+          <include name="testSaveEmployee"/>
+          <include name="beforeClassParent"/>
+        </methods>
+      </class> <!-- src.com.fruit.findings_library.test.backend.service.FindingLibraryTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

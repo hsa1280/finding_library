@@ -1,6 +1,7 @@
 package com.fruit.DAO.impl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -19,9 +20,10 @@ public class EmployeeDAOImpl implements IEmployeeDAO{
 	@Override
 	public void insert(Employee employee) {
 		
-		String sql = "INSERT INTO EMPLOYEES(FIRST_NAME, LAST_NAME, EMAIL) VALUES(?,?,?)";
+		String sql = "INSERT INTO EMPLOYEES(FIRST_NAME, LAST_NAME, EMAIL, CREATE_DATE, LAST_UPDATE_DATE, CREATE_USER, LAST_UPDATE_USER) VALUES(?,?,?,?,?,?,?)";
 		
-		jdbcTemplate.update(sql, new Object[] { employee.getFirstName(), employee.getLastName(), employee.getEmail()});
+		jdbcTemplate.update(sql, new Object[] { employee.getFirstName(), employee.getLastName(), employee.getEmail(), employee.getCreateDate(), employee.getLastUpdateDate(), employee.getCreateUser(), employee.getLastUpdateUser()});
+		
 	}
 	
 	public Employee findById( int id ) throws Exception {
@@ -50,6 +52,10 @@ public class EmployeeDAOImpl implements IEmployeeDAO{
 			employee.setFirstName((String)row.get("FIRST_NAME"));
 			employee.setLastName((String)row.get("LAST_NAME"));
 			employee.setEmail((String)row.get("EMAIL"));
+			employee.setCreateDate((Date)row.get("CREATE_DATE"));
+			employee.setLastUpdateDate((Date)row.get("LAST_UPDATE_DATE"));
+			employee.setCreateUser((String)row.get("CREATE_USER"));
+			employee.setLastUpdateUser((String)row.get("LAST_UPDATE_USER"));
 			employees.add(employee);
 		}
 		return employees;

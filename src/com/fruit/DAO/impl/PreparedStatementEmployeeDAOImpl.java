@@ -71,12 +71,12 @@ public class PreparedStatementEmployeeDAOImpl implements IPreparedStatementEmplo
 			ResultSet rs = ps.executeQuery();
 			if( rs.next() ) {
 				
-				employee = new Employee(
-						rs.getInt("ID"),
-						rs.getString( "FIRST_NAME" ),
-						rs.getString( "LAST_NAME" ),
-						rs.getString( "EMAIL" )
-						);
+//				employee = new Employee(
+//						rs.getInt("ID"),
+//						rs.getString( "FIRST_NAME" ),
+//						rs.getString( "LAST_NAME" ),
+//						rs.getString( "EMAIL" )
+//						);
 			}
 			rs.close();
 			ps.close();

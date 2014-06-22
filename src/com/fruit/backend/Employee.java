@@ -24,19 +24,17 @@ public class Employee {
 		super();
 	}
 	
-	public Employee(int id, String firstName, String lastName, String email) {
+	public Employee( String firstName, String lastName, String email) {
 		super();
-		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
 	
-	public Employee(int id, String firstName, String lastName, String email,
+	public Employee( String firstName, String lastName, String email,
 			Date createDate, Date lastUpdateDate, String createUser,
 			String lastUpdateUser) {
 		super();
-		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
