@@ -2,8 +2,8 @@ package com.fruit.backend.service;
 
 import java.util.List;
 
-import com.fruit.backend.Employee;
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Employee;
+import com.fruit.backend.bean.Finding;
 
 public interface IFindingLibraryService {
 

@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.fruit.DAO.IJDBCFindingDAO;
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Finding;
 import com.fruit.rowmapper.FindingRowMapper;
 
 public class JDBCFindingDAOImpl implements IJDBCFindingDAO {

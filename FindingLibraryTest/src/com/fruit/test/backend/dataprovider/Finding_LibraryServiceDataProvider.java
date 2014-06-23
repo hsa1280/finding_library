@@ -11,7 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 import com.fruit.backend.service.impl.FindingLibraryService;
 import com.fruit.config.ServiceConfig;
 import com.fruit.test.factory.config.ObjectFactoryConfiguration;

@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.ResultSetExtractor;
 
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 
 public class EmployeeResultSetExtractor implements ResultSetExtractor< Employee > {
 

@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.fruit.DAO.IJDBCEmployeeDAO;
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 import com.fruit.rowmapper.EmployeeRowMapper;
 
 public class JDBCEmployeeDAOImpl implements IJDBCEmployeeDAO {

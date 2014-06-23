@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Finding;
 import com.fruit.extractor.FindingResultSetExtractor;
 
 public class FindingRowMapper implements RowMapper<Finding> {

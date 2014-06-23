@@ -8,7 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 import com.fruit.test.backend.dataprovider.Finding_LibraryServiceDataProvider;
 
 public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {

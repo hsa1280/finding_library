@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 
 import com.fruit.DAO.IPreparedStatementEmployeeDAO;
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 
 public class PreparedStatementEmployeeDAOImpl implements IPreparedStatementEmployeeDAO {
 

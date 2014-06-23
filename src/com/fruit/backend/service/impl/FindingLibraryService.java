@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 import com.fruit.DAO.impl.EmployeeDAOImpl;
 import com.fruit.DAO.impl.FindingDAOImpl;
-import com.fruit.backend.Employee;
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Employee;
+import com.fruit.backend.bean.Finding;
 import com.fruit.backend.service.IFindingLibraryService;
 
 @Service

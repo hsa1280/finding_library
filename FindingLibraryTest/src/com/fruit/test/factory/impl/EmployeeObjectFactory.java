@@ -2,7 +2,7 @@ package com.fruit.test.factory.impl;
 
 import java.util.Date;
 
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 import com.fruit.test.factory.AbstractObjectFactory;
 
 public class EmployeeObjectFactory extends AbstractObjectFactory<Employee> {

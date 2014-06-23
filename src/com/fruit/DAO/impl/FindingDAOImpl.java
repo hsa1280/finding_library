@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.fruit.DAO.IFindingDAO;
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Finding;
 import com.fruit.rowmapper.FindingRowMapper;
 
 public class FindingDAOImpl implements IFindingDAO {

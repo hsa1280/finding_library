@@ -1,4 +1,4 @@
-package com.fruit.backend;
+package com.fruit.backend.bean;
 
 import java.util.Date;
 

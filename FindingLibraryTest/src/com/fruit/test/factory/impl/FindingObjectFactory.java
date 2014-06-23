@@ -2,7 +2,7 @@ package com.fruit.test.factory.impl;
 
 import java.util.Date;
 
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Finding;
 import com.fruit.test.factory.AbstractObjectFactory;
 
 public class FindingObjectFactory extends AbstractObjectFactory<Finding> {

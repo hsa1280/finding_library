@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 import com.fruit.extractor.EmployeeResultSetExtractor;
 
 public class EmployeeRowMapper implements RowMapper<Employee> {

@@ -1,5 +1,5 @@
 package com.fruit.DAO;
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 
 
 public interface IPreparedStatementEmployeeDAO {

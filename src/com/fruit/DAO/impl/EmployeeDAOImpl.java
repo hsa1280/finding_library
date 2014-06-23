@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.fruit.DAO.IEmployeeDAO;
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 import com.fruit.rowmapper.EmployeeRowMapper;
 
 public class EmployeeDAOImpl implements IEmployeeDAO{

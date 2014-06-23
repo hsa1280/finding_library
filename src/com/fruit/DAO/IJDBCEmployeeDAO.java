@@ -2,7 +2,7 @@ package com.fruit.DAO;
 
 import java.util.List;
 
-import com.fruit.backend.Employee;
+import com.fruit.backend.bean.Employee;
 
 public interface IJDBCEmployeeDAO {
 

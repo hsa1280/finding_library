@@ -1,4 +1,4 @@
-package com.fruit.backend;
+package com.fruit.backend.bean;
 
 public class Manufacturer {
 	

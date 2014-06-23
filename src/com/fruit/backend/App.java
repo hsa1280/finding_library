@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.fruit.DAO.impl.EmployeeDAOImpl;
+import com.fruit.backend.bean.Employee;
 import com.fruit.config.EmployeeImplConfig;
 
 public class App {

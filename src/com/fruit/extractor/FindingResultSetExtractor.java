@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.ResultSetExtractor;
 
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Finding;
 
 public class FindingResultSetExtractor implements ResultSetExtractor<Finding> {
 

@@ -2,7 +2,7 @@ package com.fruit.DAO;
 
 import java.util.List;
 
-import com.fruit.backend.Finding;
+import com.fruit.backend.bean.Finding;
 
 public interface IFindingDAO {
 
