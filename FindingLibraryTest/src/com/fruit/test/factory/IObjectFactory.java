@@ -1,4 +1,4 @@
-package src.com.fruit.findings_library.test.factory;
+package com.fruit.test.factory;
 
 import java.util.List;
 

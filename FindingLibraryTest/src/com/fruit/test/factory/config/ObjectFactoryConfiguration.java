@@ -1,10 +1,10 @@
-package src.com.fruit.findings_library.test.factory.config;
+package com.fruit.test.factory.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import src.com.fruit.findings_library.test.factory.impl.EmployeeObjectFactory;
-import src.com.fruit.findings_library.test.factory.impl.FindingObjectFactory;
+import com.fruit.test.factory.impl.EmployeeObjectFactory;
+import com.fruit.test.factory.impl.FindingObjectFactory;
 
 @Configuration
 public class ObjectFactoryConfiguration {

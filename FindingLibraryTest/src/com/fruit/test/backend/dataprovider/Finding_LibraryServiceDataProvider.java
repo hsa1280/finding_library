@@ -1,4 +1,4 @@
-package src.com.fruit.findings_library.test.backend.dataprovider;
+package com.fruit.test.backend.dataprovider;
 
 import java.util.Collection;
 import java.util.List;
@@ -11,13 +11,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
-import src.com.fruit.findings_library.test.factory.config.ObjectFactoryConfiguration;
-import src.com.fruit.findings_library.test.factory.impl.EmployeeObjectFactory;
-import src.com.fruit.findings_library.test.factory.impl.FindingObjectFactory;
-
 import com.fruit.backend.Employee;
 import com.fruit.backend.service.impl.FindingLibraryService;
 import com.fruit.config.ServiceConfig;
+import com.fruit.test.factory.config.ObjectFactoryConfiguration;
+import com.fruit.test.factory.impl.EmployeeObjectFactory;
+import com.fruit.test.factory.impl.FindingObjectFactory;
 
 @ContextConfiguration(
 		classes = {
@@ -39,8 +38,6 @@ public class Finding_LibraryServiceDataProvider extends AbstractTestNGSpringCont
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
-	
-	private int employeeId = 22;
 	
 	String USERNAME = "Shian";
 	
