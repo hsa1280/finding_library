@@ -58,13 +58,10 @@ public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {
 		}
 	}
 	
-//	@Test( dataProvider = "deleteEmployeeById", groups = { "deleteEmployeeById" }, dependsOnGroups = { "getEmployeeById"})
-//	public void testDeleteEmployeeById( int id ) throws Exception {
-//		
-//		getFindingLibraryService().deleteEmployeeById(id);
+	@Test( dataProvider = "deleteEmployeeById", groups = { "deleteEmployeeById" }, dependsOnGroups = { "getEmployeeById"})
+	public void testDeleteEmployeeById( int id ) throws Exception {
 		
-//		Employee employee = getFindingLibraryService().getEmployeeById(id);
-//		
-//		Assert.assertNotNull( employee);
-//	}
+		getFindingLibraryService().deleteEmployeeById(id);
+		
+	}
 }

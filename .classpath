@@ -3,6 +3,10 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="target/local/resources"/>
 	<classpathentry kind="src" path="FindingLibraryTest/src"/>
+	<classpathentry excluding="abcd/|abcd/efg/|abcd/ghj/" kind="src" path="abc"/>
+	<classpathentry excluding="efg/|ghj/" kind="src" path="abc/abcd"/>
+	<classpathentry kind="src" path="abc/abcd/efg"/>
+	<classpathentry kind="src" path="abc/abcd/ghj"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
 	<classpathentry kind="output" path="bin"/>
