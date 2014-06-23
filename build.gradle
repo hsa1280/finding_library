@@ -181,9 +181,6 @@ dependencies {
 
 	providedCompile( 'org.apache.tomcat' + ':tomcat-servlet-api:' + '7.0.42' )
 
-	providedCompile( 'oracle' + ':ojdbc6:' + '11.2.0.2.0' )
-	providedCompile( 'oracle' + ':ucp:' + '2009.07.31' )
-	providedCompile( 'oracle' + ':ons:' + '2006.01.30' )
 
 }
 
