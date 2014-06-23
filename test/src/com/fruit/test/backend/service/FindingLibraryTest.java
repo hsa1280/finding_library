@@ -64,5 +64,7 @@ public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {
 		
 		getFindingLibraryService().deleteEmployeeById(id);
 		
+		//getFindingLibraryService().getEmployeeById(id);
+		
 	}
 }

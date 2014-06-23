@@ -8,8 +8,14 @@
           <include name="springTestContextAfterTestClass"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="beforeClassParent"/>
+          <include name="testGetEmployeeById"/>
+          <include name="testSaveEmployee"/>
+          <include name="springTestContextBeforeTestMethod"/>
           <include name="springTestContextPrepareTestInstance"/>
-          <include name="testDeleteEmployeeById"/>
+          <include name="afterMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="beforeMethod"/>
+          <include name="testDeleteEmployeeById" invocation-numbers="0"/>
           <include name="afterClassParent"/>
         </methods>
       </class> <!-- com.fruit.test.backend.service.FindingLibraryTest -->

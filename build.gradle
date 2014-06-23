@@ -93,15 +93,13 @@ sourceSets {
 			exclude '**/*.java'
 		}
 	}
-
-}
-/*
-test {
-	useTestNG {
-		suites 'test/testng-suite.xml'
+		
+	test {
+		java {
+			srcDir 'test/src'
+		}
 	}
 }
-*/
 
 /*
  * Dependencies
