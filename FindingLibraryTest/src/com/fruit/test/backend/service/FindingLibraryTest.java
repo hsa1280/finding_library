@@ -1,4 +1,4 @@
-package src.com.fruit.test.backend.service;
+package com.fruit.test.backend.service;
 
 import java.lang.reflect.Method;
 import java.util.List;
@@ -8,9 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import src.com.fruit.test.backend.dataprovider.Finding_LibraryServiceDataProvider;
-
 import com.fruit.backend.Employee;
+import com.fruit.test.backend.dataprovider.Finding_LibraryServiceDataProvider;
 
 public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {
 

@@ -95,12 +95,13 @@ sourceSets {
 	}
 
 }
-
+/*
 test {
 	useTestNG {
 		suites 'test/testng-suite.xml'
 	}
 }
+*/
 
 /*
  * Dependencies

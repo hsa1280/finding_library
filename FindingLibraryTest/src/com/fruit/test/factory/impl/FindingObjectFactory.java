@@ -1,10 +1,9 @@
-package src.com.fruit.test.factory.impl;
+package com.fruit.test.factory.impl;
 
 import java.util.Date;
 
-import src.com.fruit.test.factory.AbstractObjectFactory;
-
 import com.fruit.backend.Finding;
+import com.fruit.test.factory.AbstractObjectFactory;
 
 public class FindingObjectFactory extends AbstractObjectFactory<Finding> {
 
