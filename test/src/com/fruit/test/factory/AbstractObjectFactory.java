@@ -1,4 +1,4 @@
-package com.fruit.test.factory;
+package src.com.fruit.test.factory;
 
 import java.util.ArrayList;
 import java.util.Collections;
