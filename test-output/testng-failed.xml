@@ -3,21 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="src.com.fruit.findings_library.test.backend.service.FindingLibraryTest">
+      <class name="com.fruit.test.backend.service.FindingLibraryTest">
         <methods>
           <include name="springTestContextAfterTestClass"/>
           <include name="springTestContextBeforeTestClass"/>
-          <include name="beforeMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="afterMethod"/>
-          <include name="afterClassParent"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="testGetEmployeeById" invocation-numbers="0"/>
-          <include name="testSaveEmployee"/>
           <include name="beforeClassParent"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testDeleteEmployeeById"/>
+          <include name="afterClassParent"/>
         </methods>
-      </class> <!-- src.com.fruit.findings_library.test.backend.service.FindingLibraryTest -->
+      </class> <!-- com.fruit.test.backend.service.FindingLibraryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

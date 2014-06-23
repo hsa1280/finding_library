@@ -2,47 +2,36 @@
 <testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="869" started-at="2014-06-23T03:50:41Z" finished-at="2014-06-23T03:50:42Z">
+  <suite name="Default suite" duration-ms="1603" started-at="2014-06-23T14:06:05Z" finished-at="2014-06-23T14:06:06Z">
     <groups>
       <group name="getEmployees">
-        <method signature="FindingLibraryTest.testGetEmployees()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testGetEmployees" class="com.fruit.test.backend.service.FindingLibraryTest"/>
+        <method signature="FindingLibraryTest.testGetEmployees()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testGetEmployees" class="com.fruit.test.backend.service.FindingLibraryTest"/>
       </group> <!-- getEmployees -->
       <group name="getEmployeeById">
-        <method signature="FindingLibraryTest.testGetEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testGetEmployeeById" class="com.fruit.test.backend.service.FindingLibraryTest"/>
+        <method signature="FindingLibraryTest.testGetEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testGetEmployeeById" class="com.fruit.test.backend.service.FindingLibraryTest"/>
       </group> <!-- getEmployeeById -->
       <group name="saveEmployee">
-        <method signature="FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" class="com.fruit.test.backend.service.FindingLibraryTest"/>
+        <method signature="FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" class="com.fruit.test.backend.service.FindingLibraryTest"/>
       </group> <!-- saveEmployee -->
       <group name="deleteEmployeeById">
-        <method signature="FindingLibraryTest.testDeleteEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testDeleteEmployeeById" class="com.fruit.test.backend.service.FindingLibraryTest"/>
+        <method signature="FindingLibraryTest.testDeleteEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testDeleteEmployeeById" class="com.fruit.test.backend.service.FindingLibraryTest"/>
       </group> <!-- deleteEmployeeById -->
     </groups>
-    <test name="Default test" duration-ms="869" started-at="2014-06-23T03:50:41Z" finished-at="2014-06-23T03:50:42Z">
+    <test name="Default test" duration-ms="1603" started-at="2014-06-23T14:06:05Z" finished-at="2014-06-23T14:06:06Z">
       <class name="com.fruit.test.backend.service.FindingLibraryTest">
-        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="6" started-at="2014-06-22T21:50:41Z" finished-at="2014-06-22T21:50:41Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2014-06-23T09:06:05Z" finished-at="2014-06-23T09:06:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="422" started-at="2014-06-22T21:50:41Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-06-22T21:50:41Z">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="627" started-at="2014-06-23T09:06:05Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-06-23T09:06:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method status="PASS" signature="beforeClassParent()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeClassParent" is-config="true" duration-ms="291" started-at="2014-06-22T21:50:41Z" finished-at="2014-06-22T21:50:41Z">
+        <test-method status="PASS" signature="beforeClassParent()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeClassParent" is-config="true" duration-ms="390" started-at="2014-06-23T09:06:05Z" finished-at="2014-06-23T09:06:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassParent -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:41Z" finished-at="2014-06-22T21:50:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:41Z" finished-at="2014-06-22T21:50:41Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -53,40 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="60" started-at="2014-06-22T21:50:41Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian1, lastName=Huang1, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -97,18 +53,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="147" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Employee [id=0, firstName=Shian2, lastName=Huang2, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+                <![CDATA[Employee [id=0, firstName=Shian1, lastName=Huang1, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -118,8 +74,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -130,18 +86,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian3, lastName=Huang3, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -152,7 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -163,18 +108,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="13" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+                <![CDATA[Employee [id=0, firstName=Shian2, lastName=Huang2, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -185,18 +130,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -207,18 +141,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian4, lastName=Huang4, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -229,7 +152,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="19" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Employee [id=0, firstName=Shian3, lastName=Huang3, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -240,7 +196,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -251,7 +218,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="13" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Employee [id=0, firstName=Shian4, lastName=Huang4, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -261,19 +239,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian5, lastName=Huang5, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -284,7 +251,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -295,40 +262,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="9" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian6, lastName=Huang6, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+                <![CDATA[Employee [id=0, firstName=Shian5, lastName=Huang5, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -339,7 +284,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -350,7 +295,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -361,7 +306,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="15" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Employee [id=0, firstName=Shian6, lastName=Huang6, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -372,7 +328,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -383,18 +339,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian7, lastName=Huang7, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -404,19 +349,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -427,40 +361,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="3" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian8, lastName=Huang8, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -471,7 +372,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -481,8 +382,19 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="14" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Employee [id=0, firstName=Shian7, lastName=Huang7, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -493,18 +405,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian9, lastName=Huang9, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -515,7 +416,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -526,29 +427,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testSaveEmployee" duration-ms="2" started-at="2014-06-22T21:50:42Z" data-provider="saveEmployee" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee [id=0, firstName=Shian10, lastName=Huang10, email=shian.huang@fotlinc.com, createDate=Sun Jun 22 21:50:41 GMT-06:00 2014, lastUpdateDate=Sun Jun 22 21:50:41 GMT-06:00 2014, createUser=Shian, lastUpdateUser=Shian]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSaveEmployee -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -559,18 +438,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="9" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+                <![CDATA[Employee [id=0, firstName=Shian8, lastName=Huang8, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -581,7 +460,128 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="21" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Employee [id=0, firstName=Shian9, lastName=Huang9, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="testSaveEmployee(com.fruit.backend.bean.Employee)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testSaveEmployee" duration-ms="186" started-at="2014-06-23T09:06:06Z" data-provider="saveEmployee" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Employee [id=0, firstName=Shian10, lastName=Huang10, email=shian.huang@fotlinc.com, createDate=Mon Jun 23 09:06:06 CDT 2014, lastUpdateDate=Mon Jun 23 09:06:06 CDT 2014, createUser=Shian, lastUpdateUser=Shian]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveEmployee -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testSaveEmployee(com.fruit.backend.bean.Employee) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -592,7 +592,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -603,18 +603,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testGetEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testGetEmployeeById" duration-ms="5" depends-on-groups="saveEmployee" started-at="2014-06-22T21:50:42Z" data-provider="getEmployeeById" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testGetEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testGetEmployeeById" duration-ms="6" depends-on-groups="saveEmployee" started-at="2014-06-23T09:06:06Z" data-provider="getEmployeeById" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[228]]>
+                <![CDATA[23]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetEmployeeById -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -625,7 +625,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -636,7 +636,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -647,22 +647,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testGetEmployees() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testGetEmployees()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testGetEmployees" duration-ms="3" depends-on-groups="saveEmployee" started-at="2014-06-22T21:50:42Z" data-provider="getEmployees" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testGetEmployees()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testGetEmployees" duration-ms="5" depends-on-groups="saveEmployee" started-at="2014-06-23T09:06:06Z" data-provider="getEmployees" finished-at="2014-06-23T09:06:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetEmployees -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testGetEmployees() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -673,7 +673,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -684,7 +684,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -695,29 +695,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="testDeleteEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="testDeleteEmployeeById" duration-ms="30" depends-on-groups="getEmployeeById" started-at="2014-06-23T09:06:06Z" data-provider="deleteEmployeeById" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testDeleteEmployeeById(int) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testDeleteEmployeeById(int)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="testDeleteEmployeeById" duration-ms="3" depends-on-groups="getEmployeeById" started-at="2014-06-22T21:50:42Z" data-provider="deleteEmployeeById" finished-at="2014-06-22T21:50:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[228]]>
+                <![CDATA[23]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteEmployeeById -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fruit.test.backend.service.FindingLibraryTest.testDeleteEmployeeById(int) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -728,7 +728,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -739,11 +739,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->
-        <test-method status="PASS" signature="afterClassParent()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@11e18e8c]" name="afterClassParent" is-config="true" duration-ms="0" started-at="2014-06-22T21:50:42Z" finished-at="2014-06-22T21:50:42Z">
+        <test-method status="PASS" signature="afterClassParent()[pri:0, instance:com.fruit.test.backend.service.FindingLibraryTest@1131943f]" name="afterClassParent" is-config="true" duration-ms="0" started-at="2014-06-23T09:06:06Z" finished-at="2014-06-23T09:06:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassParent -->
