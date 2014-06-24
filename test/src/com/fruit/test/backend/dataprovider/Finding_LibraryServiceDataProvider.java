@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
 import com.fruit.backend.bean.Employee;
+import com.fruit.backend.bean.Finding;
 import com.fruit.backend.service.impl.FindingLibraryService;
 import com.fruit.config.ServiceConfig;
 import com.fruit.test.factory.config.ObjectFactoryConfiguration;
@@ -57,6 +58,7 @@ public class Finding_LibraryServiceDataProvider extends AbstractTestNGSpringCont
 	protected void deleteAllData()
 	{
 		getJdbcTemplate().execute( "delete from employees where create_user = '" + USERNAME + "'");
+		getJdbcTemplate().execute( "delete from findings where create_user = '" + USERNAME + "'");
 	}
 	/****************************Employee DataProviders************************************/
 	
@@ -97,7 +99,41 @@ public class Finding_LibraryServiceDataProvider extends AbstractTestNGSpringCont
 	}
 	
 	/****************************Finding DataProviders************************************/
-	@DataProvider
+	@DataProvider( name = "saveFinding")
+	public Object[][] saveFinding() throws Exception {
+		
+		List<Finding> findings = getFindingObjectFactory().getAllNonPersisted();
+		
+		return objectListToObjectArray(findings);
+	}
+	
+	@DataProvider( name = "getFindingById" )
+	public Object[][] getFindingById() throws Exception {
+		
+		List<Finding> findings = getFindingLibraryService().getAllFindings();
+		
+		return new Object[][] {
+			new Object[] { findings.get(1).getId()}
+		};
+	}
+	
+	@DataProvider( name = "getAllFindings" )
+	public Object[][] getAllFindings() throws Exception {
+		
+		return new Object[][] {
+			new Object[]{}
+		};
+	}
+	
+	@DataProvider( name = "deleteFindingById" ) 
+	public Object[][] deleteFindingById() throws Exception {
+		
+		List<Finding> findings = getFindingLibraryService().getAllFindings();
+		
+		return new Object[][] {
+			new Object[] { findings.get(1).getId()}
+		};
+	}
 	
 	public EmployeeObjectFactory getEmployeeObjectFactory() {
 		return employeeObjectFactory;

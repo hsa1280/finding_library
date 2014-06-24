@@ -13,7 +13,7 @@ public class FindingObjectFactory extends AbstractObjectFactory<Finding> {
 		if( nonPersistedObjectList.size() == 0 ) {
 			
 			for( int i = 1; i <= 10; i++) {
-				nonPersistedObjectList.add( new Finding( "Finding" + i, "F", true, i, new Date(), new Date(), "Shian" + i, "Shian" + i));
+				nonPersistedObjectList.add( new Finding( "Finding" + i, "F", true, i, new Date(), new Date(), "Shian", "Shian"));
 			} 
 		}
 	}

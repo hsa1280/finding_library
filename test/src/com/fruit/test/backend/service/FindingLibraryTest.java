@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.fruit.backend.bean.Employee;
+import com.fruit.backend.bean.Finding;
 import com.fruit.test.backend.dataprovider.Finding_LibraryServiceDataProvider;
 
 public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {
@@ -64,7 +65,44 @@ public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {
 		
 		getFindingLibraryService().deleteEmployeeById(id);
 		
-		//getFindingLibraryService().getEmployeeById(id);
+	}
+	
+	/****************************Finding Test*********************************/
+	@Test( dataProvider = "saveFinding", groups = { "saveFinding"} )
+	public void testSaveFinding( Finding finding ) throws Exception {
 		
+		getFindingLibraryService().saveFinding(finding);
+		getFindingObjectFactory().addPersisted(finding);
+	}
+	
+	@Test( dataProvider = "getFindingById", groups = {" getFindingById "}, dependsOnGroups = {"saveFinding"} )
+	public void getFindingById( int id ) throws Exception {
+		
+		Finding finding = getFindingLibraryService().getFindingById(id);
+		
+		Assert.assertNotNull(finding);
+		Assert.assertEquals(id, finding.getId());
+	}
+	
+	@Test( dataProvider = "getAllFindings", groups = {"getAllFindings"}, dependsOnGroups = {"saveFinding"} )
+	public void testGetAllFindings() throws Exception {
+		
+		List<Finding> findings1 = getFindingLibraryService().getAllFindings();
+		
+		Assert.assertNotNull(findings1);
+		Assert.assertTrue( findings1.size() > 0);
+		System.out.println("From DB:");
+		System.out.println( findings1 );
+		
+	}
+	
+	@Test( dataProvider = "deleteFindingById", groups = { "deleteFindingById" }, dependsOnGroups = {"saveFinding"} )
+	public void testDeleteFindingById( int id ) throws Exception {
+		
+		getFindingLibraryService().deleteFindingById(id);
+		
+		List<Finding> findings1 = getFindingLibraryService().getAllFindings();
+		System.out.println("From DB:");
+		System.out.println( findings1 );
 	}
 }
