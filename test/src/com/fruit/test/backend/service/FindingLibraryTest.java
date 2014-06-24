@@ -72,7 +72,8 @@ public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {
 	public void testSaveFinding( Finding finding ) throws Exception {
 		
 		getFindingLibraryService().saveFinding(finding);
-		getFindingObjectFactory().addPersisted(finding);
+		
+		System.out.println();
 	}
 	
 	@Test( dataProvider = "getFindingById", groups = {" getFindingById "}, dependsOnGroups = {"saveFinding"} )
