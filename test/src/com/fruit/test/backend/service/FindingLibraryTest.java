@@ -73,9 +73,6 @@ public class FindingLibraryTest extends Finding_LibraryServiceDataProvider {
 		
 		getFindingLibraryService().saveFinding(finding);
 		getFindingObjectFactory().addPersisted(finding);
-		
-		System.out.println();
-		System.out.println();
 	}
 	
 	@Test( dataProvider = "getFindingById", groups = {" getFindingById "}, dependsOnGroups = {"saveFinding"} )
