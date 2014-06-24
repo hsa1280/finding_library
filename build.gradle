@@ -117,7 +117,7 @@ repositories {
 
 dependencies {
 
-	def springVersion = '3.2.4.RELEASE'
+	def springVersion = '4.0.2.RELEASE'
 	def springDataVersion = '1.4.1.RELEASE'
 	def springDataSolrVersion = '1.0.0.RELEASE'
 	def hibernateVersion = '4.2.5.Final'

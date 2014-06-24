@@ -96,6 +96,9 @@ public class Finding_LibraryServiceDataProvider extends AbstractTestNGSpringCont
 		};
 	}
 	
+	/****************************Finding DataProviders************************************/
+	@DataProvider
+	
 	public EmployeeObjectFactory getEmployeeObjectFactory() {
 		return employeeObjectFactory;
 	}
