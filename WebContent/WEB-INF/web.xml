@@ -13,8 +13,8 @@
 	</context-param>
 	
 	<context-param>
-	  	<param-name>contextConfigLocation</param-name>
-	  	<param-value>WEB-INF/defaultServlet-servlet.xml</param-value>
+    	<param-name>contextClass</param-name>
+    	<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
 	</context-param>
 	
 	<context-param>
@@ -30,7 +30,11 @@
 
   	<servlet-mapping>
     	<servlet-name>defaultServlet</servlet-name>
-   		<url-pattern>/</url-pattern>
+   		<url-pattern>/page/*</url-pattern>
   	</servlet-mapping>
+  	
+  	<listener>
+    	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  	</listener>
 
 </web-app>
