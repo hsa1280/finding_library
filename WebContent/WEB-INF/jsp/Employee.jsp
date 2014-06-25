@@ -20,7 +20,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${Employees}" var="employee">
+				<c:forEach items="${employees}" var="employee">
 					<tr>
 						<td>
 							${employee.FIRST_NAME}
