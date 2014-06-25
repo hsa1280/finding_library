@@ -17,6 +17,11 @@
 	  	<param-value>WEB-INF/defaultServlet-servlet.xml</param-value>
 	</context-param>
 	
+	<context-param>
+	  	<param-name>contextConfigLocation</param-name>
+	  	<param-value>com.fruit.config.**</param-value>
+	</context-param>
+	
   	<servlet>
     	<servlet-name>defaultServlet</servlet-name>
     	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
