@@ -49,7 +49,8 @@ public class FindingDAOImpl implements IFindingDAO {
 			finding.setId(Integer.parseInt(String.valueOf(row.get("ID"))));
 			finding.setDescription((String)row.get("DESCRIPTION"));
 			finding.setfType((String)row.get("F_TYPE"));
-			finding.setApproved(Boolean.parseBoolean(String.valueOf(row.get("APPROVED"))));
+			finding.setApproved((String.valueOf(row.get("APPROVED")).equals("1")));
+			finding.setManufacturerId(Integer.parseInt(String.valueOf(row.get("MANUFACTURER_ID"))));
 			
 			findings.add(finding);
 		}

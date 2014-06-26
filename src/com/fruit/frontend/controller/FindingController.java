@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping( "/employee" )
-public class EmployeeController extends AbstractController {
-	
+@RequestMapping( "/finding" )
+public class FindingController extends AbstractController {
+
 	@RequestMapping( value = "/list", method = RequestMethod.GET )
-	@ResponseStatus( HttpStatus.OK)
+	@ResponseStatus( HttpStatus.OK )
 	public ModelAndView list() throws Exception {
 		
-		ModelAndView modelAndView = new ModelAndView( "employee" );
-		modelAndView.addObject("employees", getFindingLibraryService().getAllFindings());
+		ModelAndView modelAndView = new ModelAndView("finding");
+		modelAndView.addObject("findings", getFindingLibraryService().getAllFindings());
 		
 		return modelAndView;
 	}
