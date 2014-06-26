@@ -23,13 +23,13 @@
 				<c:forEach items="${employees}" var="employee">
 					<tr>
 						<td>
-							${employee.FIRST_NAME}
+							${employee.firstName}
 						</td>
 						<td>
-							${employee.LAST_NAME}
+							${employee.lastName}
 						</td>	
 						<td>
-							${employee.EMAIL}
+							${employee.email}
 						</td>	
 					</tr>
 				</c:forEach>
