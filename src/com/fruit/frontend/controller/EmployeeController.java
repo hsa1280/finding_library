@@ -16,7 +16,7 @@ public class EmployeeController extends AbstractController {
 	public ModelAndView list() throws Exception {
 		
 		ModelAndView modelAndView = new ModelAndView( "employee" );
-		modelAndView.addObject("employees", getFindingLibraryService().getAllFindings());
+		modelAndView.addObject("employees", getFindingLibraryService().getAllEmployees());
 		
 		return modelAndView;
 	}
